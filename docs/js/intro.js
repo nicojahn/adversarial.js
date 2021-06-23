@@ -166,14 +166,18 @@ async function loadImagenetModel() {
 
 // On page load
 window.addEventListener('load', showImage);
-window.addEventListener('load', resetAvailableAttacks);
+window.addEventListener('load', resetOnNewImage);
+window.addEventListener('load', resetAttack);
+window.addEventListener('load', removeLeftOverlay);
 window.addEventListener('load', showBanners);
 
 // Model selection dropdown
+/*
 $('#select-model').addEventListener('change', showImage);
 $('#select-model').addEventListener('change', resetOnNewImage);
 $('#select-model').addEventListener('change', resetAttack);
 $('#select-model').addEventListener('change', removeLeftOverlay);
+*/
 
 // Next image button
 $('#next-image').addEventListener('click', showNextImage);

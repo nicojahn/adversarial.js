@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+<!--
     <title>adversarial.js – Intro</title>
+-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +12,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/style.css">
-
+<!--
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C02BRW1FMK"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -18,34 +20,37 @@
       gtag('js', new Date());
       gtag('config', 'G-C02BRW1FMK');
     </script>
+-->
   </head>
   <body>
     <div class="container">
+<!--
       <div id="header" class="row">
         <div id="logo" class="one-half column"><a href="."><h1>adversarial.js</h1></a></div>
         <div id="nav" class="one-half column">
           <a href="." class="active">Intro</a>&ensp;·&ensp;<a href="examples.html">Examples</a>&ensp;·&ensp;<a href="faq.html">FAQ</a>&ensp;·&ensp;<a href="api.html">API</a>&ensp;·&ensp;<a href="https://github.com/kennysong/adversarial.js" target="_blank">GitHub</a>
         </div>
       </div>
-
+-->
       <div id="chrome-banner" class="warning-banner">⚠️ It looks like you're not using Google Chrome. This demo <strong>may not work properly</strong>. If it breaks, please try in Google Chrome.</div>
       <div id="mobile-banner" class="error-banner">⚠️ It looks like you're on a mobile device without 32-bit WebGL. The demo <strong>will not work properly</strong>. Please try on desktop Google Chrome.</div>
-
+<!--
       <div id="banner">Break neural networks in your browser.</div>
-
+-->
       <div id="dashboard">
+<!--
         <div id="top-row" class="row border-bottom">
           <div class="center">Everything runs client-side – there is no server! Try the demo:</div>
         </div>
-
-        <div class="row border-bottom">
+-->
+        <div class="row border-bottom" style="display: none;">
           <span id="select-model-label">Select a model:&nbsp;</span>
           <select id="select-model">
-            <option value="" selected disabled>Select model</option>
+            <option value="" disabled>Select model</option>
             <option value="mnist">MNIST (digit recognition)</option>
             <option value="gtsrb">GTSRB (street sign recognition)</option>
             <option value="cifar">CIFAR-10 (object recognition, small)</option>
-            <option value="imagenet">ImageNet (object recognition, large)</option>
+            <option value="imagenet" selected>ImageNet (object recognition, large)</option>
           </select>
         </div>
 
@@ -129,6 +134,7 @@
         </div>
       </div>
 
+<!--
       <hr>
 
       <div class="faq">
@@ -175,7 +181,8 @@
         <div id="banner-faq-link"><a href="faq.html">See the full FAQ.</a></div>
       </div>
     </div>
-
+-->
+    <div id="banner-faq-link">Credits go to: <a href="https://kennysong.github.io/adversarial.js/" target="_blank">Kenny Song</a></div>
     <!-- Hack to load a sample of ImageNet images that we can access in canvas -->
     <img class="0" style="display:none;">
     <img class="1" style="display:none;">
