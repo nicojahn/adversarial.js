@@ -80,7 +80,6 @@ loadedData.then(() => {
 const CONFIGS = {
   'fgsm': {ε: 0.05},  // 0.1 L_inf perturbation is too visible in color
   'fgsmTargeted': {loss: 1},  // The 2nd loss function is too heavy for ImageNet
-  'jsmaOnePixel': {ε: 75},  // This is unsuccessful. I estimate that it requires ~50x higher ε than CIFAR-10 to be successful on ImageNet, but that is too slow
   'cw': {κ: 5, c: 1, λ: 0.05}  // Generate higher confidence adversarial examples, and minimize distortion
 };
 

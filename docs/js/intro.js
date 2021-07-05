@@ -286,8 +286,8 @@ async function generateAdv() {
   switch ($('#select-attack').value) {
     case 'fgsmTargeted': attack = fgsmTargeted; break;
     case 'bimTargeted': attack = bimTargeted; break;
-    case 'jsmaOnePixel': attack = jsmaOnePixel; break;
-    case 'jsma': attack = jsma; break;
+    //case 'jsmaOnePixel': attack = jsmaOnePixel; break;
+    //case 'jsma': attack = jsma; break;
     case 'cw': attack = cw; break;
   }
 
@@ -446,6 +446,7 @@ function resetAvailableAttacks() {
     let selectAttack = $('#select-attack');
     let selectTarget = $('#select-target');
 
+    /*
     // Add or remove JSMA as an option
     if (jsma === true) {
       selectAttack.querySelector('option[value=jsma]').disabled = false;
@@ -453,6 +454,7 @@ function resetAvailableAttacks() {
       selectAttack.querySelector('option[value=jsma]').disabled = true;
       if (selectAttack.value === 'jsma') { selectAttack.value = 'fgsmTargeted'; }
     }
+    */
 
     // Filter available target classes in dropdown
     if (selectTarget.getAttribute('data-model') === modelName) {
